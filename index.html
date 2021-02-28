@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="component">
+      <div class="component__image"></div>
+      <div class="component__info">
+        <h1 class="info__header">FAQ</h1>
+        <ul class="info__dropdown-list" id='dropdown'>
+          <li class="dropdown-list__item">
+            <button href="#" class="item__question">
+              How many team members can I invite?
+            </button>
+            <div class="item__answer hide">
+              You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.
+            </div>
+          </li>
+
+          <li class="dropdown-list__item">
+            <button href="#" class="item__question">
+              What is the maximum file upload size?
+            </button>
+            <div class="item__answer hide">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </div>
+          </li>
+
+          <li class="dropdown-list__item">
+            <button href="#" class="item__question">
+              How do I reset my password?
+            </button>
+            <div class="item__answer hide">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </div>
+          </li>
+
+          <li class="dropdown-list__item">
+            <button href="#" class="item__question">
+              Can I cancel my subscription?
+            </button>
+            <div class="item__answer hide">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </div>
+          </li>
+
+          <li class="dropdown-list__item">
+            <button href="#" class="item__question">
+              Do you provide additional support?
+            </button>
+            <div class="item__answer hide">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+  </div>
+  <script src='./script.js'></script>
+</body>
+</html>
