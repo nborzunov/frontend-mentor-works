@@ -24,17 +24,17 @@ toggle.addEventListener('change', (e) => {
 
   period.innerText = toggle.checked ? ' / year' : '/ month' ;
   console.log(period.innerText)
-  price.innerText = prices[toggle.checked ? 0 : 1][slider.value - 1];
+  price.innerText = prices[toggle.checked ? 1 : 0][slider.value - 1];
 });
 
 slider.addEventListener('mousemove', (e) => {
-  price.innerText = prices[toggle.checked ? 0 : 1][slider.value - 1];
+  price.innerText = prices[toggle.checked ? 1 : 0][slider.value - 1];
   slider.style.background = gradient[slider.value - 1];
   views.innerText = viewsArr[slider.value -1];
 });
 
 slider.addEventListener('change', (e) => {
-  price.innerText = prices[toggle.checked ? 0 : 1][slider.value - 1];
+  price.innerText = prices[toggle.checked ? 1 : 0][slider.value - 1];
 });
 
 
