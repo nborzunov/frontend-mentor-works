@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.sass">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <div class="Wrapper">
+    <div class="Block">
+      <div class="Block__heading">
+        <h2 class="Block__heading-header">Simple, traffic-based pricing</h2>
+        <div class="Block__heading-subheader">Sign-up for our 30-day trial. No credit card required.</div>
+      </div>
+
+      <div class="Component" id='node'>
+        <div class="Component__sliderBox">
+          <div class="Component__sliderBox-content">
+            <div class="Component__sliderBox-label" id='views'>100k Pageviews</div>
+            <div class="Component__sliderBox-price" ><span id='price'>$16.00</span><span id='period'> / month</span></div>
+          </div>
+          <input class="Component__sliderBox-slider" type='range' min='1' max='5' value='3' id='slider'></input>
+        </div>
+  
+        <div class="Component__switchBox">
+          <label for='switch' class='Component__switchBox-label'>Monthly Billing</label>
+          <input type="checkbox" class="Component__switchBox-switch" id='switch'>
+          <label for='switch' class='Component__switchBox-label'>Yearly Billing <span class="Component__switchBox-title">25% discount</span></label>
+        </div>
+  
+        <div class="Component__submitBox">
+          <ul class="Component__submitBox-list">
+            <li class="Component__submitBox-item">Unlimited websites</li>
+            <li class="Component__submitBox-item">100% data ownership</li>
+            <li class="Component__submitBox-item">Email reports</li>
+          </ul>
+          <button class="Component__submitBox__button">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='./scripts/main.js'></script>
+</body>
+</html>

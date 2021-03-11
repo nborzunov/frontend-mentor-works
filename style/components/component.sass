@@ -1,0 +1,170 @@
+.Component
+    display: flex
+    align-items: center
+    flex-direction: column
+    max-width: 540px
+    max-height: 400px
+    width: 100%
+    height: 100%
+    background-color: $ComponentBackground
+    border-radius: 16px
+    &__sliderBox
+        display: flex
+        height: 150px
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        &-content
+            width: 100%
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding: 20px 40px
+            font-size: 18px
+            font-weight: 600
+            color: $Text
+        &-label
+            text-transform: uppercase
+        &-price
+            font-size: 40px
+            font-weight: 800
+            color: $TextBackground
+            display: flex
+            align-items: center
+            #period
+                display: inline-block
+                font-size: 18px
+                font-weight: 600
+                padding-left: 4px
+                color: $Text
+        &-slider
+            -webkit-appearance: none
+            appearance: none
+            width: calc(100% - 100px)
+            height: 7px
+            background: linear-gradient(to right, $SliderBar 0%, $SliderBar 50%, $SliderEmpty 50%, $SliderEmpty 100%)
+            outline: none
+            opacity: 0.7
+            -webkit-transition: .2s
+            transition: opacity .2s
+            border-radius: 20px
+            margin: auto 50px
+            display: block
+            &:hover 
+                opacity: 1
+            &::-webkit-slider-thumb
+                -webkit-appearance: none
+                appearance: none
+                width: 40px
+                height: 40px
+                cursor: pointer
+                border-radius: 50%
+                transition: all 200ms ease-in-out
+                background: url('../images/icon-slider.svg') 50% 50% no-repeat
+                background-color: $SliderBackground
+            &::-moz-range-thumb 
+                width: 40px
+                height: 40px
+                background: $SliderBackground
+                cursor: pointer
+                border-radius: 50%
+            &:active::-webkit-slider-thumb
+                transform: scale(1.1)
+            &:active::-moz-slider-thumb 
+                transform: scale(1.1)
+            &::-moz-range-track
+                background-color: #fff
+    &__switchBox
+        display: flex
+        height: 150px
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        width: 100%
+        font-size: 12px
+        margin-left: 70px
+        &-label
+            color: $Text
+        &-switch
+            --active-inner: #fff
+            --border: #BBC1E1
+            --background: white
+            --disabled: #F6F8FF
+            --disabled-inner: hsl(174, 86%, 45%)
+            -webkit-appearance: none
+            -moz-appearance: none
+            height: 21px
+            outline: none
+            display: inline-block
+            vertical-align: top
+            position: relative
+            margin: 0 12px
+            cursor: pointer
+            border: 1px solid var(--bc, var(--border))
+            background: var(--b, var(--background))
+            transition: background .3s, border-color .3s, box-shadow .2s
+            box-shadow: 0 0 0 var(--focus)
+            width: 38px
+            border-radius: 11px
+            &:after 
+                content: ''
+                display: block
+                left: 0
+                top: 0
+                position: absolute
+                transition: transform var(--d-t, .3s) var(--d-t-e, ease), opacity var(--d-o, .2s)
+            &:checked 
+                --b: var(--active)
+                --bc: var(--active)
+                --d-o: .3s
+                --d-t: .6s
+                --d-t-e: cubic-bezier(.2, .85, .32, 1.2)
+                --b: var(--disabled-inner)
+                --bc: var(--border)
+            &:hover 
+                &:not(:checked) 
+                    &:not(:disabled) 
+                    --bc: var(--border-hover)
+            &:after 
+                left: 2px
+                top: 2px
+                border-radius: 50%
+                width: 15px
+                height: 15px
+                background: var(--ab, var(--border))
+                transform: translateX(var(--x, 0))
+            &:checked 
+                --ab: var(--active-inner)
+                --x: 17px
+        &-title
+            font-size: 12px
+            color: $DiscountText
+            background-color: $DiscountBackground
+            padding: 2px 4px
+    &__submitBox
+        display: flex
+        width: 100%
+
+        &-list 
+            display: flex
+            flex-direction: column
+            width: 50%
+            padding-left: 50px
+            row-gap: 8px
+            list-style-image: url('../images/icon-check.svg')
+        &-item 
+            font-size: 12px
+            color: $Text
+        &__button
+            margin: auto
+            width: 170px
+            height: 40px
+            border: none
+            color: $ButtonText
+            background: $ButtonBackground
+            border-radius: 20px
+
+
+
