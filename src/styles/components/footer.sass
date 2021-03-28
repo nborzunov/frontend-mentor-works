@@ -1,0 +1,51 @@
+.footer
+  background: $background-footer
+  border-top-right-radius: 100px
+  width: 100%
+  display: flex
+  justify-content: center
+  &__content
+    max-width: $breakpoint-desktop
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 80px 0
+  &-column
+    &__title
+      font-family: 'Ubuntu', sans-serif
+      font-weight: 600
+      font-size: $font-common
+      color: $text-white
+      padding: 24px 0
+      border: none
+      text-decoration: none
+      text-align: start
+
+    &-list
+      list-style: none
+      &__item
+        padding: 12px 0
+        a
+          font-family: 'Ubuntu', sans-serif
+          font-weight: 300
+          font-size: $font-common
+          color: $text-footer
+          border: none
+          text-decoration: none
+          &:hover
+            opacity: 0.8
+          &:focus
+            opacity: 0.8
+            outline: none
+            border-bottom: 1px solid $text-footer
+
+@media screen and (max-width: $breakpoint-mobile)
+  .footer__content
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+  .footer-column
+    &__title
+      text-align: center

@@ -1,0 +1,59 @@
+.promo
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: auto
+  background: url('../img/bg-pattern-circles.svg') no-repeat, linear-gradient(90deg, $promo-gradient-1, $promo-gradient-2)
+  background-position: 15% 50%, 0 0
+  border-bottom-left-radius: 100px
+  border-top-right-radius: 100px
+  max-width: 100%
+  &__content
+    width: 100%
+    height: 100%
+    max-width: $breakpoint-desktop
+  &-content
+    display: flex
+    flex-direction: row
+    &__column
+      width: 50%
+      height: 100%
+      position: relative
+    &__title
+      font-family: 'Overpass', sans-serif
+      font-weight: 700
+      font-size: $font-lead
+      color: $text-white
+      padding: 5rem 0 2rem 0
+    &__subtitle
+      font-family: 'Overpass', sans-serif
+      font-weight: 300
+      font-size: 16px
+      word-spacing: 2px
+      line-height: 1.75em
+      color: $text-white
+      margin-right: 36px
+    &__image
+      margin-top: -60px
+      margin-bottom: -100px
+      margin-left: -20px
+      width: auto
+      height: auto
+
+
+@media screen and (max-width: $breakpoint-mobile)
+  .promo-content
+    flex-direction: column
+    text-align: center
+    padding-bottom: 64px
+    &__image
+      margin: auto
+      margin-top: -20%
+      width: 75%
+    &__title
+      padding: 0 16px
+    &__subtitle
+      margin: 0
+      padding: 0 16px
+    &__column
+      width: 100%

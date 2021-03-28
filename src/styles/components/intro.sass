@@ -1,0 +1,74 @@
+.intro
+  display: flex
+  flex-direction: column
+  min-height: 90vh
+  max-width: 100%
+  height: auto
+  position: relative
+  &__title
+    text-align: center
+    font-family: 'Overpass', sans-serif
+    font-weight: 700
+    font-size: $font-lead
+    color: $text-title
+  &__content
+    width: 100%
+    height: 100%
+    max-width: $breakpoint-desktop
+    margin: auto
+  &-content
+    display: flex
+    flex-direction: row
+    &__column
+      width: 50%
+      height: 100%
+      position: relative
+    &__title
+      font-family: 'Overpass', sans-serif
+      font-weight: 700
+      font-size: $font-title
+      color: $text-title
+      padding: 5rem 0 2rem 0
+      overflow-wrap: break-word
+    &__subtitle
+      font-family: 'Overpass', sans-serif
+      font-weight: 700
+      font-size: 16px
+      word-spacing: 2px
+      line-height: 1.75em
+      color: $text-body
+      margin-right: 36px
+    &__image
+      width: auto
+      height: auto
+
+
+@media screen and (min-width: $breakpoint-mobile)
+  .desktop
+    display: none
+    margin-top: -150px
+    margin-left: -50px
+  .mobile
+    display: block
+
+@media screen and (max-width: $breakpoint-mobile)
+  .intro__title
+    padding: 0 20px
+  .intro-content
+    flex-direction: column-reverse
+    text-align: center
+    padding-bottom: 64px
+    &__title
+      padding: 0 16px
+    &__subtitle
+      margin: 0
+      padding: 0 16px
+    &__column
+      width: 100%
+    &__image
+      margin: auto
+      max-width: 100%
+  .desktop
+    display: none
+  .mobile
+    display: block
