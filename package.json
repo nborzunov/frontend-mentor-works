@@ -6,7 +6,7 @@
   "author": "Nikolay Borzunov",
   "license": "MIT",
   "scripts": {
-    "build": "parcel ./src/index.html"
+    "build": "parcel build ./src/index.html --open"
   },
   "dependencies": {
     "parcel-bundler": "^1.12.5"
