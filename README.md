@@ -12,7 +12,7 @@
 - [Task](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8) 
 - [Preview](https://silly-jones-7c9c2c.netlify.app/) 
 - [Solution](https://github.com/tydusgg/frontend-mentor-works/tree/task_3)
-### Task 4 - Commerse landing page 
+### Task 4 - Commerce landing page 
 - [Task](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP)
 - [Preview](https://frontend-mentor-task-4.netlify.app//) 
 - [Solution](https://github.com/tydusgg/frontend-mentor-works/tree/task_4)
