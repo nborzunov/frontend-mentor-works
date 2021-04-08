@@ -20,7 +20,7 @@
 - [Solution](https://github.com/tydusgg/frontend-mentor-works/tree/task_2)
 
 ### Task 1 - Profile Component
- - [Task](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ 
+ - [Task](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
  - [Preview](https://tydusgg.github.io/frontend-mentor-works/) 
  - [Solution](https://github.com/tydusgg/frontend-mentor-works/tree/task_1)
 
