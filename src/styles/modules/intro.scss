@@ -1,0 +1,84 @@
+.intro {
+  background: url('../images/bg-intro-desktop.svg'), linear-gradient($background-gray, $background-white);
+  background-repeat: no-repeat;
+  background-position: 190% 110%, 0 0;
+  background-size: 75% auto, auto auto;
+  height: 100vh;
+  position: relative;
+  &__content {
+    z-index: 110;
+    margin: 0 auto;
+    max-width: $breakpoint-desktop;
+    display: flex;
+    height: 100%;
+    padding: 0 1rem;
+  }
+
+  &__column:nth-child(2){
+    z-index: 1;
+    background: url('../images/image-mockups.png') no-repeat;
+    background-size: 99% auto;
+    background-position: left 78%;
+    position: absolute;
+    right: -8%;
+  }
+  &-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: auto 0;
+    &__title {
+      font-size: 4rem;
+      font-weight: 300;
+      color: $dark-blue;
+      margin: 2rem 0;
+    }
+    &__subtitle {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $grayish-blue;
+    }
+    &__button{
+      margin: 2rem 0;
+      max-width: 180px;
+      background: linear-gradient(90deg, $lime-green, $bright-cyan);
+      color: $background-white;
+      border: none;
+      border-radius: 32px;
+      padding: 1rem 1.5rem;
+      transition: all 0.2s ease;
+      &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      &:focus{
+        outline: none;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile){
+  .intro{
+    background: url('../images/bg-intro-mobile.svg'), linear-gradient($background-gray, $background-white);
+    background-repeat: no-repeat;
+    background-position: center top, 0 0;
+    background-size: 100% auto;
+    &__content{
+      flex-direction: column-reverse;
+    }
+    &__column{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+    &__column:nth-child(2){
+      position: static;
+      background-position: center 120%;
+    }
+  }
+}

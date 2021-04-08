@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Easybank landing page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+  <header class="header">
+    <img src="./images/logo.svg" alt="logo" class="header__logo">
+    <div class="hamburger">
+      <button class="hamburger__button closed" id="button"></button>
+      <div class="hamburger__content" id="content">
+        <ul class="header__menu header-menu">
+          <li class="header-menu__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">About</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">Careers</a>
+          </li>
+        </ul>
+        <button class="header__button">Request Invite</button>
+      </div>
+    </div>
+
+  </header>
+  <section class="intro">
+    <div class="intro__content">
+      <div class="intro__column intro-column">
+        <h1 class="intro-column__title">
+          Next generation digital banking</h1>
+        <h2 class="intro-column__subtitle">
+          Take your financial life online.
+          Your Easybank account will be a one-stop-shop
+          for spending, saving, budgeting, investing, and much more.</h2>
+        <button class="intro-column__button">Request Invite</button>
+      </div>
+      <div class="intro__column intro-column">
+
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="features__content">
+      <h1 class="features__title">
+        Why choose Easybank?</h1>
+      <h2 class="features__subtitle">
+        We leverage Open Banking to turn your bank account into your financial hub.
+        Control your finances like never before.</h2>
+      <ul class="features__grid features-grid">
+        <li class="features-grid__item">
+          <img src="./images/icon-online.svg" alt="" class="features-grid__image">
+          <h3 class="features-grid__title">
+            Online Banking</h3>
+          <h4 class="features-grid__subtitle">
+            Our modern web and mobile applications allow you to keep track of your finances
+            wherever you are in the world.</h4>
+        </li>
+        <li class="features-grid__item">
+          <img src="./images/icon-budgeting.svg" alt="" class="features-grid__image">
+          <h3 class="features-grid__title">
+            Simple Budgeting</h3>
+          <h4 class="features-grid__subtitle">
+            See exactly where your money goes each month. Receive notifications when you’re
+            close to hitting your limits.</h4>
+        </li>
+        <li class="features-grid__item">
+          <img src="./images/icon-onboarding.svg" alt="" class="features-grid__image">
+          <h3 class="features-grid__title">
+            Fast Onboarding</h3>
+          <h4 class="features-grid__subtitle">
+            We don’t do branches. Open your account in minutes online and start taking control
+            of your finances right away.</h4>
+        </li>
+        <li class="features-grid__item">
+          <img src="./images/icon-api.svg" alt="" class="features-grid__image">
+          <h3 class="features-grid__title">
+            Open API</h3>
+          <h4 class="features-grid__subtitle">
+            Manage your savings, investments, pension, and much more from one account. Tracking
+            your money has never been easier.
+          </h4>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="articles">
+    <div class="articles__content">
+      <h1 class="articles__title">Latest Articles</h1>
+      <ul class="articles__grid articles-grid">
+        <li class="articles-grid__item">
+          <img src="./images/image-currency.jpg" alt="" class="articles-grid__image">
+          <div class="articles-grid__caption">
+            By Claire Robinson</div>
+          <h5 class="articles-grid__title">
+            Receive money in any currency with no fees</h5>
+          <h6 class="articles-grid__subtitle">
+            The world is getting smaller and we’re becoming more mobile. So why should you be
+            forced to only receive money in a single …</h6>
+        </li>
+        <li class="articles-grid__item">
+          <img src="./images/image-restaurant.jpg" alt="" class="articles-grid__image">
+          <div class="articles-grid__caption">
+            By Wilson Hutton</div>
+          <h5 class="articles-grid__title">
+            Treat yourself without worrying about money</h5>
+          <h6 class="articles-grid__subtitle">
+            Our simple budgeting feature allows you to separate out your spending and set
+            realistic limits each month. That means you …</h6>
+        </li>
+        <li class="articles-grid__item">
+          <img src="./images/image-plane.jpg" alt="" class="articles-grid__image">
+          <div class="articles-grid__caption">
+            By Wilson Hutton</div>
+          <h5 class="articles-grid__title">
+            Take your Easybank card wherever you go</h5>
+          <h6 class="articles-grid__subtitle">
+            We want you to enjoy your travels. This is why we don’t charge any fees on purchases
+            while you’re abroad. We’ll even show you …</h6>
+        </li>
+        <li class="articles-grid__item">
+          <img src="./images/image-confetti.jpg" alt="" class="articles-grid__image">
+          <div class="articles-grid__caption">
+            By Claire Robinson</div>
+          <h5 class="articles-grid__title">
+            Our invite-only Beta accounts are now live!</h5>
+          <h6 class="articles-grid__subtitle">
+            After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+            It’s easy to request an invite through the site ...</h6>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__column footer-column">
+        <div class="footer-column__item">
+          <img src="./images/logo-light.svg" alt="" class="footer__logo">
+          <ul class="footer__socials footer-socials">
+            <li class="footer-socials__item">
+              <a href="#">
+                <img src="./images/icon-facebook.svg" alt=""></a></li>
+            <li class="footer-socials__item">
+              <a href="#">
+                <img src="./images/icon-youtube.svg" alt=""></a></li>
+            <li class="footer-socials__item">
+              <a href="#">
+                <img src="./images/icon-twitter.svg" alt=""></a></li>
+            <li class="footer-socials__item">
+              <a href="#">
+                <img src="./images/icon-pinterest.svg" alt=""></a></li>
+            <li class="footer-socials__item">
+              <a href="#">
+                <img src="./images/icon-instagram.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer-column__item">
+          <ul class="footer-column__links">
+            <a href="#" class="footer-column__link">About Us</a>
+            <a href="#" class="footer-column__link">Contact</a>
+            <a href="#" class="footer-column__link">Blog</a>
+          </ul>
+        </div>
+        <div class="footer-column__item">
+          <ul class="footer-column__links">
+            <a href="#" class="footer-column__link">Careers</a>
+            <a href="#" class="footer-column__link">Support</a>
+            <a href="#" class="footer-column__link">Privacy Policy</a>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__column footer-column">
+        <div class="footer-column__item">
+          <button class="footer-column__button">Request Invite</button>
+          <div class="footer-column__copyright">  © Easybank. All Rights Reserved</div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="./scripts/hamburger.js"></script>
+</body>
+</html>
