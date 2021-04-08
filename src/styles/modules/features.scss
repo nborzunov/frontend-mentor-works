@@ -4,7 +4,7 @@
   &__content{
     max-width: $breakpoint-desktop;
     margin: auto;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     @media screen and (max-width: $breakpoint-mobile){
       &{
         text-align: center;
